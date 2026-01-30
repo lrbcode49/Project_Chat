@@ -1,11 +1,20 @@
 #project  V1 
 
-//@lrbcode49
-// project  V1 - basic chat interface
-// add  API  Google Gemini 3 
-// add  Sidenavication history chat
-// add  loading animation while waiting for response
-// style  chat interface
-// style  Sidenavication 
-// save history chat in Sidenavication
-// 2026
+
+
+
+   <div >
+                    <ol>
+                        <li>Basic chat interface</li>
+                        <li>Integrate Google Gemini API</li>
+                        <li>Add side navigation history</li>
+                        <li>Implement loading animation for responses</li>
+                        <li>Style chat interface</li>
+                        <li>Style side navigation</li>
+                        <li>Save chat history to side navigation</li>
+                    </ol>
+      <p ><small>Project V1 - @lrbcode49 | 2026</small></p>
+   </div>
+
+
+<img src="https://raw.githubusercontent.com/lrbcode49/Project_Chat/refs/heads/main/Projec.png" alt="ProjectImage">
