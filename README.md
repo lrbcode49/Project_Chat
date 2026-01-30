@@ -1,4 +1,3 @@
-#project  V1 
 
 
 
@@ -6,7 +5,6 @@
    <div >
                     <ol>
                         <li>Basic chat interface</li>
-                        <li>Integrate Google Gemini API</li>
                         <li>Add side navigation history</li>
                         <li>Implement loading animation for responses</li>
                         <li>Style chat interface</li>
