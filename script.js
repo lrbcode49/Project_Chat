@@ -1,25 +1,4 @@
 
-
-
-
-
-
-
-
-// Project Chat with Gemini 3
-
-
-
-
-
-
-
-
-
-
-
-
-
 //@lrbcode49
 // project  V1 - basic chat interface
 // add  API  Google Gemini 3 
