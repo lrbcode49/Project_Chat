@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Ai </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 parentContainer">
+
+
+        <div class="Sidenavication">
+
+            <div class="faBar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+
+
+
+            <div class="SideNavButton">
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="fa-solid fa-plus"></i>
+                    <span class="collapseText">New Chat</span>
+                </button>
+            </div>
+
+            <div class="history">
+                <ul>
+                </ul>
+            </div>
+
+
+
+
+            <div class="actionList">
+                <button class="transparentButton">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span class="collapseText">Help</span>
+                </button>
+                <button class="transparentButton">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span class="collapseText">Activity</span>
+                </button>
+                <button class="transparentButton">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="collapseText">Settings</span>
+                </button>
+            </div>
+
+
+        </div>
+
+
+        <!-- ////////////// -->
+
+        <div class="chatwindow">
+
+            <!-- default title -->
+            <div class="chatheader">
+                <h1>
+                    <span class="BrandHello">Hello Mr lrbcode49</span><br />
+                    <span class="BrandDescription">How Can I Help You Today?</span>
+                </h1>
+            </div>
+            <!-- ///// -->
+
+
+            <div class="chatbody" style="text-align: start;">
+
+                <!-- <span class="Userquestion"> 
+            <img src="https://i.pinimg.com/originals/01/19/7d/01197dcbb0e140dea6049f56da1f54bf.gif" alt="" class="iconAVA">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fuga architecto rerum ducimus quod, facilis voluptatem eligendi quam placeat, distinctio sint quo at accusamus ratione consectetur repellat delectus alias corrupti harum, aliquam reiciendis. Expedita impedit culpa in accusantium magnam rerum qui suscipit nemo eius, temporibus debitis nesciunt nisi repudiandae aspernatur ipsam commodi molestias quas dolores deserunt reiciendis illo officiis quaerat repellendus! Minima odit possimus libero natus ipsam doloribus voluptatum dolorem quibusdam rerum eos, obcaecati quidem deserunt sequi a dolor velit quis ad, placeat neque facilis nihil quo laborum? At dignissimos sit nihil excepturi blanditiis distinctio tempora nostrum beatae non optio voluptatem aut ex laborum suscipit et deleniti nulla dicta perferendis quia dolore, minus soluta obcaecati quaerat quibusdam? Dolorum cupiditate necessitatibus autem accusantium nemo illum eius possimus sapiente maiores quia enim cumque quae quidem, vero laudantium repudiandae numquam doloribus ducimus placeat exercitationem dolores inventore voluptatibus magni asperiores. Exercitationem rerum eius laboriosam repellendus quasi, obcaecati labore iste consequuntur aut accusamus officiis vitae at nesciunt possimus harum! Quod saepe doloribus qui, libero quaerat sed expedita sit eveniet beatae? Provident culpa sit molestiae officiis consequatur cumque temporibus officia cupiditate quia nam quis exercitationem, recusandae aliquid maxime aperiam facere iure placeat dolorum vero velit inventore!
+           </span> <br/>
+
+
+           <span class="responseBot"> 
+            <img src="https://cliply.co/wp-content/uploads/2020/09/442008571_ARTIST_AVATAR_3D_400px.gif" alt="" class="iconAVA">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium pariatur quo laborum, itaque enim dolorem placeat nostrum est vero! Dolores?
+           </span>
+           <hr/> -->
+
+
+
+
+
+
+
+
+
+
+                <!-- iconAVA  -->
+
+
+
+
+
+
+            </div>
+
+            <!-- //// -->
+
+
+            <div class=" inputChat">
+                <textarea placeholder="Type your message here..."></textarea>
+
+                <div class="iconGroup">
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-paper-plane" onclick="sendRequest()"></i>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+ 
+  --primary: #1E88E5;
+
+
+  --secondary: #7C4DFF;
+
+ 
+  --bg-main: #0F172A;
+
+  
+  --bg-card: #111827;
+
+  --text-main: #E5E7EB;
+
+ 
+  --text-muted: #9CA3AF;
+
+ 
+  --success: #22C55E;
+
+
+  --danger: #EF4444;
+
+
+
+
+    --shadow: rgba(0, 0, 0, 0.4);
+
+
+
+  
+}
+
+
+
+
+
+body{
+    font-family: 'outfit', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke !important;
+}
+
+
+.parentContainer{
+    display: flex;
+    height: 100%;
+    background-color: var(--bg-main);
+    position: relative;
+
+}
+
+
+.Sidenavication{
+    width: 400px;
+    background-color: var(--bg-card);
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: width 0.3s ease; 
+    box-shadow: var(--shadow)
+
+}
+
+
+i{
+    color: var(--secondary);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+
+
+
+.history{
+    max-height: 260px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    margin-top: 30px;
+   
+    
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; 
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+
+}
+
+
+.history ul li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    margin-bottom:20px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+
+}
+
+
+.actionList{
+    bottom: 40px;
+    left: 20px;
+    display: flex;
+    position: fixed;
+    z-index: 100000;
+    width: 100px;
+}
+.actionList button{
+    padding: 10px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    font-size: 17px;
+}
+
+
+.actionList .transparentButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    
+}
+
+
+/* hover */
+.actionList .transparentButton:hover,
+.history ul li:hover
+{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+
+
+.SideNavButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+    
+}
+
+.SideNavButton button{
+    padding: 10px;
+    border-radius: 40px;
+    width: 70%;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+        font-size: 20px;
+
+    
+}
+
+.faBar {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+.faBar i{
+    padding: 0px;
+    position: fixed;
+    top: 10px;
+    z-index: 100000;
+}
+
+
+
+.Sidenavication.closed {
+    width: 100px;
+    overflow: hidden;
+  
+
+}
+
+
+.Sidenavication.closed .collapseText {
+    display: none;
+  
+}
+
+.collapseText{
+    color: var(--text-muted);
+}
+
+.Sidenavication.closed .SideNavButton i {
+    font-size: 12px;
+
+  
+}
+
+.Sidenavication.closed .actionList  {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 50px;
+}
+
+/* =============================== */
+
+.chatwindow{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+.chatheader h1 .BrandHello{
+
+ background: linear-gradient(74deg,
+      #4285f4 0,
+      #9b72cb 9%,
+      #d96570 20%,
+      #d96570 24%,
+      #9b72cb 35%,
+      #4285f4 44%,
+      #9b72cb 50%,
+      #d96570 56%,
+      #fff 75%,
+      #fff 100%);
+  background-size: 400% 100%;
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+.chatheader h1{
+    font-size: 60px;
+    text-align: start;
+}
+
+
+.inputChat{
+    position: fixed;
+    bottom: 40px;
+    width: 70%; 
+    max-width: 800px;
+    box-sizing: border-box;
+    padding: 20px;
+    /* background-color: var(--bg-card); */
+    display: flex;
+    outline: none;
+    margin-left: 40px;
+    
+    
+}
+
+
+.inputChat textarea{
+    width: 60%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    height: 50px;
+
+    
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .chatheader h1{
+        font-size: 35px;
+    }
+    .chatbody{
+        height: 60vh;
+        
+    }
+ 
+}
+
+
+/* Box chat */
+.iconAVA{
+   width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 10px;
+
+
+
+}
+
+.chatbody{
+    height: 70vh;
+    overflow: scroll;
+    margin-left: 10px;
+    box-sizing: border-box;
+    /* ha :( */
+    word-break: break-all; 
+    width: 100%;
+    
+}
+
+.chatbody .Userquestion, .chatbody .responseBot{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 18px;
+    
+}
+
+
+
+.iconGroup{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+
+.inputChat .iconGroup i:nth-child(2) {
+  display: none;
+}
+
+
+
+
+
+
+
+/* style wait response AI */
+.loader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.animatedBG {
+  border-radius: 4px;
+  border: none;
+  animation: loader 3s infinite linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #4285f4, #fff, #4285f4);
+  height: 15px;
+}
+
+.animatedBG:nth-child(3) {
+  width: 70%;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -800px 0;
+  }
+
+  to {
+    background-position: 800px 0;
+  }
+}
+
+
+/* end style wait response AI */
