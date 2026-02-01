@@ -7,8 +7,6 @@
                         <li>Basic chat interface</li>
                         <li>Add side navigation history</li>
                         <li>Implement loading animation for responses</li>
-                        <li>Style chat interface</li>
-                        <li>Style side navigation</li>
                         <li>Save chat history to side navigation</li>
                     </ol>
       <p ><small>Project V1 - @lrbcode49 | 2026</small></p>
